@@ -1,5 +1,10 @@
 module.exports = {
     theme: {
+        fontFamily: {
+            'sans': ['"Open Sans"','system-ui','-apple-system','BlinkMacSystemFont','"Segoe UI"','Roboto','"Helvetica Neue"','Arial','"Noto Sans"','sans-serif','"Apple Color Emoji"','"Segoe UI Emoji"','"Segoe UI Symbol"','"Noto Color Emoji"'],
+            'serif': ['"PT Serif"','Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+            'mono': ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+        },
         screens: {
             'xl': {'max': '1090px'},
             // => @media (max-width: 1279px) { ... }
@@ -32,7 +37,6 @@ module.exports = {
             "40": 40,
             "50": 50,
             "25": 25,
-            "50": 50,
             "75": 75,
             "100": 100,
             auto: "auto"
