@@ -3,9 +3,17 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Work as workModel;
 
 class Work extends Component
 {
+    /**
+     * The navLinks.
+     *
+     * @var array
+     */
+    public $works;
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +21,7 @@ class Work extends Component
      */
     public function __construct()
     {
-        //
+        $this->works = workModel::all();
     }
 
     /**

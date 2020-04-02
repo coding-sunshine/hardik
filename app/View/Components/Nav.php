@@ -3,7 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
-use App\Models\Nav as NavModel;
+use App\Models\Nav as navModel;
 
 class Nav extends Component
 {
@@ -21,7 +21,7 @@ class Nav extends Component
      */
     public function __construct()
     {
-        $this->navLinks = NavModel::all();
+        $this->navLinks = navModel::all();
     }
 
     /**
