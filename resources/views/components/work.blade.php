@@ -1,5 +1,5 @@
 <div id="work" class="Work px-16 md:px-5 py-20 md:py-12">
-    <h1 class="  md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl" style="background-image: url('/images/work-bg.png')">
+    <h1 class="  md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl" style="background-image: url('/images/diamond.svg')">
         Work
     </h1>
     <div class="pt-16 md:pt-10 md:px-4">
