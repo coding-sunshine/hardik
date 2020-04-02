@@ -3,9 +3,17 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Nav as NavModel;
 
 class Nav extends Component
 {
+    /**
+     * The navLinks.
+     *
+     * @var array
+     */
+    public $navLinks;
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +21,7 @@ class Nav extends Component
      */
     public function __construct()
     {
-        //
+        $this->navLinks = NavModel::all();
     }
 
     /**

@@ -2,10 +2,18 @@
 
 namespace App\View\Components;
 
+use App\Models\Nav as NavModel;
 use Illuminate\View\Component;
 
 class Sticky extends Component
 {
+    /**
+     * The navLinks.
+     *
+     * @var array
+     */
+    public $navLinks;
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +21,7 @@ class Sticky extends Component
      */
     public function __construct()
     {
-        //
+        $this->navLinks = NavModel::all();
     }
 
     /**
