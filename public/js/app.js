@@ -19294,6 +19294,175 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$(".thumb").hover(function () {
+  var imgurl = $(".thumb").children().data("hoverimage");
+  $(this).children().css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).children().css("background-image", "");
+});
+$(".thumb").hover(function () {
+  $(this).find(".child").toggleClass("hidden");
+});
+$(function () {
+  var up = $(".up");
+  var down = $(".down");
+  var sidebar = $(".sidebar");
+  var workImg = $(".work").data("hoverimage");
+  var aboutImg = $(".about").data("hoverimage");
+  var skillsImg = $(".skills").data("hoverimage");
+  var contactImg = $(".contact").data("hoverimage");
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 190) {
+      $(".work").css("background-image", "");
+      $(".about").css("background-image", "");
+      $(".skills").css("background-image", "");
+      $(".contact").css("background-image", "");
+      $(".work").removeClass("font-bold");
+      $(".about").removeClass("font-bold");
+      $(".skills").removeClass("font-bold");
+      $(".contact").removeClass("font-bold");
+      down.removeClass("hidden").addClass("block");
+      up.removeClass("block").addClass("hidden");
+      sidebar.removeClass("block").addClass("hidden");
+    }
+
+    if (scroll > 800) {
+      sidebar.removeClass("hidden").addClass("block");
+
+      if (scroll < 1000) {
+        $(".work").css("background-image", "url(" + workImg + ")");
+        $(".work").addClass("font-bold");
+        $(".about").css("background-image", "");
+        $(".about").removeClass("font-bold");
+      }
+    }
+
+    if (scroll > 1560) {
+      $(".work").css("background-image", "");
+      $(".work").removeClass("font-bold");
+
+      if (scroll < 1800) {
+        $(".about").css("background-image", "url(" + aboutImg + ")");
+        $(".about").addClass("font-bold");
+        $(".skills").css("background-image", "");
+        $(".skills").removeClass("font-bold");
+      }
+    }
+
+    if (scroll > 2350) {
+      $(".about").css("background-image", "");
+      $(".about").removeClass("font-bold");
+
+      if (scroll < 2900) {
+        $(".skills").css("background-image", "url(" + skillsImg + ")");
+        $(".skills").addClass("font-bold");
+        $(".contact").css("background-image", "");
+        $(".contact").removeClass("font-bold");
+        up.removeClass("block").addClass("hidden");
+        down.removeClass("hidden").addClass("block");
+      }
+    }
+
+    if (scroll > 3400) {
+      $(".skills").css("background-image", "");
+      $(".skills").removeClass("font-bold");
+      $(".contact").css("background-image", "url(" + contactImg + ")");
+      $(".contact").addClass("font-bold");
+      up.removeClass("hidden").addClass("block");
+      down.removeClass("block").addClass("hidden");
+    }
+  });
+});
+$(".arrow").hover(function () {
+  var imgurl = $(this).data("hoverimage");
+  $(this).css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).css("background-image", "");
+});
+$(".logo").hover(function () {
+  var imgurl = $(this).data("hoverimage");
+  $(this).css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).css("background-image", "");
+});
+$(document).ready(function () {
+  $(".up").click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 1000);
+  });
+  $(".down").click(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 800) {
+      $("html, body").animate({
+        scrollTop: $("#work").offset().top
+      }, 1000);
+    } else if (scroll < 1550) {
+      $("html, body").animate({
+        scrollTop: $("#about").offset().top
+      }, 1000);
+    } else if (scroll < 2350) {
+      $("html, body").animate({
+        scrollTop: $("#skills").offset().top
+      }, 1000);
+    } else if (scroll < 3450) {
+      $("html, body").animate({
+        scrollTop: $("#contact").offset().top
+      }, 1000);
+    }
+  });
+});
+$(".side-li").hover(function () {
+  var imgurl = $(this).data("hoverimage");
+  $(this).css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).css("background-image", "");
+});
+
+window.smoothScroll = function (target) {
+  var scrollContainer = target;
+
+  do {
+    //find scroll container
+    scrollContainer = scrollContainer.parentNode;
+    if (!scrollContainer) return;
+    scrollContainer.scrollTop += 1;
+  } while (scrollContainer.scrollTop == 0);
+
+  var targetY = 0;
+
+  do {
+    //find the top of target relatively to the container
+    if (target == scrollContainer) break;
+    targetY += target.offsetTop;
+  } while (target = target.offsetParent);
+
+  scroll = function (_scroll) {
+    function scroll(_x, _x2, _x3, _x4) {
+      return _scroll.apply(this, arguments);
+    }
+
+    scroll.toString = function () {
+      return _scroll.toString();
+    };
+
+    return scroll;
+  }(function (c, a, b, i) {
+    i++;
+    if (i > 30) return;
+    c.scrollTop = a + (b - a) / 30 * i;
+    setTimeout(function () {
+      scroll(c, a, b, i);
+    }, 20);
+  }); // start scrolling
+
+
+  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+};
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
