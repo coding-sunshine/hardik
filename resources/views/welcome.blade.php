@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" class="overflow-x-hidden">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Styles -->
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    </head>
-
-<body>
+@extends('layouts.app')
+@section('content')
     <header class="flex items-center justify-between md:px-8 px-16 py-5">
         <figure>
             <img src="/images/logo.png" style="background-image: url('/images/logo-bg.png')" class="bg-contain bg-no-repeat bg-right-bottom lg:w-16 md:w-1/2" />
@@ -273,21 +257,17 @@
     <img data-hoverimage="/images/blue-arrow.png" class="md:hidden arrow bg-contain lg:hidden bg-no-repeat bg-right-bottom hidden bottom-0 cursor-pointer up fixed lg:w-12 mb-4 md:mb-2 md:mr-1 mr-4 right-0" src="/images/black-arrow-up.png" />
 
     <ul class="hidden md:hidden lg:hidden fixed flex flex-col font-serif items-end mr-10 right-0 sidebar top-0 transform translate-y-56">
-    <li onclick="smoothScroll(document.getElementById('work'))" class="side-li work hover:font-bold mb-4 bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/oval.png">
-        Work
-    </li>
-    <li onclick="smoothScroll(document.getElementById('about'))" class="side-li about hover:font-bold mb-4 bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/blue-oval.png">
-        About
-    </li>
-    <li onclick="smoothScroll(document.getElementById('skills'))" class="side-li skills hover:font-bold mb-4 bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/peach-oval.png">
-        Skills
-    </li>
-    <li onclick="smoothScroll(document.getElementById('contact'))" class="side-li contact hover:font-bold bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/green-oval.png">
-        Contact
-    </li>
-</ul>
-
-    <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
-</body>
-
-</html>
+        <li onclick="smoothScroll(document.getElementById('work'))" class="side-li work hover:font-bold mb-4 bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/oval.png">
+            Work
+        </li>
+        <li onclick="smoothScroll(document.getElementById('about'))" class="side-li about hover:font-bold mb-4 bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/blue-oval.png">
+            About
+        </li>
+        <li onclick="smoothScroll(document.getElementById('skills'))" class="side-li skills hover:font-bold mb-4 bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/peach-oval.png">
+            Skills
+        </li>
+        <li onclick="smoothScroll(document.getElementById('contact'))" class="side-li contact hover:font-bold bg-no-repeat bg-center py-1 cursor-pointer md:text-sm md:mb-1" data-hoverimage="/images/green-oval.png">
+            Contact
+        </li>
+    </ul>
+@endsection
