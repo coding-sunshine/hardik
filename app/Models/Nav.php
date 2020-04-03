@@ -18,21 +18,25 @@ class Nav extends Model
             'abbr' => 'work',
             'name' => 'Work',
             'color' => 'yellow',
+            'hash' => '#FFDE80',
         ],
         [
             'abbr' => 'about',
             'name' => 'About',
             'color' => 'blue',
+            'hash' => '#80C1FF',
         ],
         [
             'abbr' => 'skills',
             'name' => 'Skills',
             'color' => 'peach',
+            'hash' => '#FF9780',
         ],
         [
             'abbr' => 'contact',
             'name' => 'Contact',
             'color' => 'green',
+            'hash' => '#80FF8E',
         ],
     ];
 }

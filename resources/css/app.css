@@ -60,3 +60,15 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+.work-card:hover .work-card-hover{
+    background-image: url("/images/rectangle.png");
+}
+.work-card:hover .work-card-hover .work-card-hover-text{
+    visibility: visible;
+}
+.arrow:hover{
+    background-image: url("/images/blue-arrow.png");
+}
+.side-li:hover .side-li-hover{
+    visibility: visible;
+}

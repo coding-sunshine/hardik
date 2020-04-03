@@ -30,7 +30,8 @@ module.exports = {
             "1/2": "5px"
         },
         left: {
-            "0": "0rem"
+            "0": "0rem",
+            "-10": "-10px"
         },
         zIndex: {
             "-10": -10,

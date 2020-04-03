@@ -1,27 +1,5 @@
 require('./bootstrap');
 
-$(".thumb").hover(
-    function() {
-        var imgurl = $(".thumb")
-            .children()
-            .data("hoverimage");
-        $(this)
-            .children()
-            .css("background-image", "url(" + imgurl + ")");
-    },
-    function() {
-        $(this)
-            .children()
-            .css("background-image", "");
-    }
-);
-
-$(".thumb").hover(function() {
-    $(this)
-        .find(".child")
-        .toggleClass("hidden");
-});
-
 $(function() {
     var up = $(".up");
     var down = $(".down");
@@ -105,26 +83,6 @@ $(function() {
     });
 });
 
-$(".arrow").hover(
-    function() {
-        var imgurl = $(this).data("hoverimage");
-        $(this).css("background-image", "url(" + imgurl + ")");
-    },
-    function() {
-        $(this).css("background-image", "");
-    }
-);
-
-$(".logo").hover(
-    function() {
-        var imgurl = $(this).data("hoverimage");
-        $(this).css("background-image", "url(" + imgurl + ")");
-    },
-    function() {
-        $(this).css("background-image", "");
-    }
-);
-
 $(document).ready(function() {
     $(".up").click(function() {
         $("html, body").animate(
@@ -169,16 +127,6 @@ $(document).ready(function() {
         }
     });
 });
-
-$(".side-li").hover(
-    function() {
-        var imgurl = $(this).data("hoverimage");
-        $(this).css("background-image", "url(" + imgurl + ")");
-    },
-    function() {
-        $(this).css("background-image", "");
-    }
-);
 
 window.smoothScroll = function(target) {
     var scrollContainer = target;
