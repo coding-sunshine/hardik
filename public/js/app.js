@@ -1,1 +1,337 @@
-!function(o){var e={};function s(t){if(e[t])return e[t].exports;var a=e[t]={i:t,l:!1,exports:{}};return o[t].call(a.exports,a,a.exports,s),a.l=!0,a.exports}s.m=o,s.c=e,s.d=function(o,e,t){s.o(o,e)||Object.defineProperty(o,e,{enumerable:!0,get:t})},s.r=function(o){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(o,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(o,"__esModule",{value:!0})},s.t=function(o,e){if(1&e&&(o=s(o)),8&e)return o;if(4&e&&"object"==typeof o&&o&&o.__esModule)return o;var t=Object.create(null);if(s.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:o}),2&e&&"string"!=typeof o)for(var a in o)s.d(t,a,function(e){return o[e]}.bind(null,a));return t},s.n=function(o){var e=o&&o.__esModule?function(){return o.default}:function(){return o};return s.d(e,"a",e),e},s.o=function(o,e){return Object.prototype.hasOwnProperty.call(o,e)},s.p="/",s(s.s=0)}({0:function(o,e,s){s("bUC5"),o.exports=s("Ge+w")},"9Wh1":function(o,e){},"Ge+w":function(o,e){},bUC5:function(o,e,s){s("9Wh1"),$(".thumb").hover((function(){var o=$(".thumb").children().data("hoverimage");$(this).children().css("background-image","url("+o+")")}),(function(){$(this).children().css("background-image","")})),$(".thumb").hover((function(){$(this).find(".child").toggleClass("hidden")})),$((function(){var o=$(".up"),e=$(".down"),s=$(".sidebar"),t=$(".work").data("hoverimage"),a=$(".about").data("hoverimage"),n=$(".skills").data("hoverimage"),r=$(".contact").data("hoverimage");$(window).scroll((function(){var l=$(window).scrollTop();l<190&&($(".work").css("background-image",""),$(".about").css("background-image",""),$(".skills").css("background-image",""),$(".contact").css("background-image",""),$(".work").removeClass("font-bold"),$(".about").removeClass("font-bold"),$(".skills").removeClass("font-bold"),$(".contact").removeClass("font-bold"),e.removeClass("hidden").addClass("block"),o.removeClass("block").addClass("hidden"),s.removeClass("block").addClass("hidden")),l>800&&(s.removeClass("hidden").addClass("block"),l<1e3&&($(".work").css("background-image","url("+t+")"),$(".work").addClass("font-bold"),$(".about").css("background-image",""),$(".about").removeClass("font-bold"))),l>1560&&($(".work").css("background-image",""),$(".work").removeClass("font-bold"),l<1800&&($(".about").css("background-image","url("+a+")"),$(".about").addClass("font-bold"),$(".skills").css("background-image",""),$(".skills").removeClass("font-bold"))),l>2350&&($(".about").css("background-image",""),$(".about").removeClass("font-bold"),l<2900&&($(".skills").css("background-image","url("+n+")"),$(".skills").addClass("font-bold"),$(".contact").css("background-image",""),$(".contact").removeClass("font-bold"),o.removeClass("block").addClass("hidden"),e.removeClass("hidden").addClass("block"))),l>3400&&($(".skills").css("background-image",""),$(".skills").removeClass("font-bold"),$(".contact").css("background-image","url("+r+")"),$(".contact").addClass("font-bold"),o.removeClass("hidden").addClass("block"),e.removeClass("block").addClass("hidden"))}))})),$(".arrow").hover((function(){var o=$(this).data("hoverimage");$(this).css("background-image","url("+o+")")}),(function(){$(this).css("background-image","")})),$(".logo").hover((function(){var o=$(this).data("hoverimage");$(this).css("background-image","url("+o+")")}),(function(){$(this).css("background-image","")})),$(document).ready((function(){$(".up").click((function(){$("html, body").animate({scrollTop:0},1e3)})),$(".down").click((function(){var o=$(window).scrollTop();o<800?$("html, body").animate({scrollTop:$("#work").offset().top},1e3):o<1550?$("html, body").animate({scrollTop:$("#about").offset().top},1e3):o<2350?$("html, body").animate({scrollTop:$("#skills").offset().top},1e3):o<3450&&$("html, body").animate({scrollTop:$("#contact").offset().top},1e3)}))})),$(".side-li").hover((function(){var o=$(this).data("hoverimage");$(this).css("background-image","url("+o+")")}),(function(){$(this).css("background-image","")})),window.smoothScroll=function(o){var e=o;do{if(!(e=e.parentNode))return;e.scrollTop+=1}while(0==e.scrollTop);var s=0;do{if(o==e)break;s+=o.offsetTop}while(o=o.offsetParent);scroll=function(o){function e(e,s,t,a){return o.apply(this,arguments)}return e.toString=function(){return o.toString()},e}((function(o,e,s,t){++t>30||(o.scrollTop=e+(s-e)/30*t,setTimeout((function(){scroll(o,e,s,t)}),20))})),scroll(e,e.scrollTop,s,0)}}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/js/app.js":
+/*!*****************************!*\
+  !*** ./resources/js/app.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+$(".thumb").hover(function () {
+  var imgurl = $(".thumb").children().data("hoverimage");
+  $(this).children().css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).children().css("background-image", "");
+});
+$(".thumb").hover(function () {
+  $(this).find(".child").toggleClass("hidden");
+});
+$(function () {
+  var up = $(".up");
+  var down = $(".down");
+  var sidebar = $(".sidebar");
+  var workImg = $(".work").data("hoverimage");
+  var aboutImg = $(".about").data("hoverimage");
+  var skillsImg = $(".skills").data("hoverimage");
+  var contactImg = $(".contact").data("hoverimage");
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 190) {
+      $(".work").css("background-image", "");
+      $(".about").css("background-image", "");
+      $(".skills").css("background-image", "");
+      $(".contact").css("background-image", "");
+      $(".work").removeClass("font-bold");
+      $(".about").removeClass("font-bold");
+      $(".skills").removeClass("font-bold");
+      $(".contact").removeClass("font-bold");
+      down.removeClass("hidden").addClass("block");
+      up.removeClass("block").addClass("hidden");
+      sidebar.removeClass("block").addClass("hidden");
+    }
+
+    if (scroll > 800) {
+      sidebar.removeClass("hidden").addClass("block");
+
+      if (scroll < 1000) {
+        $(".work").css("background-image", "url(" + workImg + ")");
+        $(".work").addClass("font-bold");
+        $(".about").css("background-image", "");
+        $(".about").removeClass("font-bold");
+      }
+    }
+
+    if (scroll > 1560) {
+      $(".work").css("background-image", "");
+      $(".work").removeClass("font-bold");
+
+      if (scroll < 1800) {
+        $(".about").css("background-image", "url(" + aboutImg + ")");
+        $(".about").addClass("font-bold");
+        $(".skills").css("background-image", "");
+        $(".skills").removeClass("font-bold");
+      }
+    }
+
+    if (scroll > 2350) {
+      $(".about").css("background-image", "");
+      $(".about").removeClass("font-bold");
+
+      if (scroll < 2900) {
+        $(".skills").css("background-image", "url(" + skillsImg + ")");
+        $(".skills").addClass("font-bold");
+        $(".contact").css("background-image", "");
+        $(".contact").removeClass("font-bold");
+        up.removeClass("block").addClass("hidden");
+        down.removeClass("hidden").addClass("block");
+      }
+    }
+
+    if (scroll > 3400) {
+      $(".skills").css("background-image", "");
+      $(".skills").removeClass("font-bold");
+      $(".contact").css("background-image", "url(" + contactImg + ")");
+      $(".contact").addClass("font-bold");
+      up.removeClass("hidden").addClass("block");
+      down.removeClass("block").addClass("hidden");
+    }
+  });
+});
+$(".arrow").hover(function () {
+  var imgurl = $(this).data("hoverimage");
+  $(this).css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).css("background-image", "");
+});
+$(".logo").hover(function () {
+  var imgurl = $(this).data("hoverimage");
+  $(this).css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).css("background-image", "");
+});
+$(document).ready(function () {
+  $(".up").click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 1000);
+  });
+  $(".down").click(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 800) {
+      $("html, body").animate({
+        scrollTop: $("#work").offset().top
+      }, 1000);
+    } else if (scroll < 1550) {
+      $("html, body").animate({
+        scrollTop: $("#about").offset().top
+      }, 1000);
+    } else if (scroll < 2350) {
+      $("html, body").animate({
+        scrollTop: $("#skills").offset().top
+      }, 1000);
+    } else if (scroll < 3450) {
+      $("html, body").animate({
+        scrollTop: $("#contact").offset().top
+      }, 1000);
+    }
+  });
+});
+$(".side-li").hover(function () {
+  var imgurl = $(this).data("hoverimage");
+  $(this).css("background-image", "url(" + imgurl + ")");
+}, function () {
+  $(this).css("background-image", "");
+});
+
+window.smoothScroll = function (target) {
+  var scrollContainer = target;
+
+  do {
+    //find scroll container
+    scrollContainer = scrollContainer.parentNode;
+    if (!scrollContainer) return;
+    scrollContainer.scrollTop += 1;
+  } while (scrollContainer.scrollTop == 0);
+
+  var targetY = 0;
+
+  do {
+    //find the top of target relatively to the container
+    if (target == scrollContainer) break;
+    targetY += target.offsetTop;
+  } while (target = target.offsetParent);
+
+  scroll = function (_scroll) {
+    function scroll(_x, _x2, _x3, _x4) {
+      return _scroll.apply(this, arguments);
+    }
+
+    scroll.toString = function () {
+      return _scroll.toString();
+    };
+
+    return scroll;
+  }(function (c, a, b, i) {
+    i++;
+    if (i > 30) return;
+    c.scrollTop = a + (b - a) / 30 * i;
+    setTimeout(function () {
+      scroll(c, a, b, i);
+    }, 20);
+  }); // start scrolling
+
+
+  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+};
+
+/***/ }),
+
+/***/ "./resources/js/bootstrap.js":
+/*!***********************************!*\
+  !*** ./resources/js/bootstrap.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//window._ = require('lodash');
+
+/**
+ * We'll load jQuery and the Bootstrap jQuery plugin which provides support
+ * for JavaScript based Bootstrap features such as modals and tabs. This
+ * code may be modified to fit the specific needs of your application.
+ */
+// try {
+//     window.Popper = require('popper.js').default;
+//     window.$ = window.jQuery = require('jquery');
+//     require('bootstrap');
+// } catch (e) {}
+
+/**
+ * We'll load the axios HTTP library which allows us to easily issue requests
+ * to our Laravel back-end. This library automatically handles sending the
+ * CSRF token as a header based on the value of the "XSRF" token cookie.
+ */
+//window.axios = require('axios');
+//window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+/**
+ * Echo exposes an expressive API for subscribing to channels and listening
+ * for events that are broadcast by Laravel. Echo and event broadcasting
+ * allows your team to easily build robust real-time web applications.
+ */
+// import Echo from 'laravel-echo'
+// window.Pusher = require('pusher-js');
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: process.env.MIX_PUSHER_APP_KEY,
+//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+//     useTLS: true
+// });
+
+/***/ }),
+
+/***/ 0:
+/*!***********************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/hardik/Code/coding-sunshine/hardikshah.dev/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/hardik/Code/coding-sunshine/hardikshah.dev/resources/css/app.css */"./resources/css/app.css");
+
+
+/***/ })
+
+/******/ });

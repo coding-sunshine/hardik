@@ -1,5 +1,8 @@
 <div id="work" class="Work px-16 md:px-5 py-20 md:py-12">
-    <h1 class="  md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl" style="background-image: url('/images/diamond.svg')">
+    <h1 class="relative md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl" style="background-image: url('/images/diamond.svg')">
+        <span>
+            <img src="/images/diamond.svg" class="absolute left-0 bottom-0 -z-10" />
+        </span>
         Work
     </h1>
     <div class="pt-16 md:pt-10 md:px-4">
