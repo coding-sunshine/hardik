@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const del = require('del');
 
 require('laravel-mix-tailwind');
 require('laravel-mix-purgecss');
@@ -13,7 +14,7 @@ require('laravel-mix-purgecss');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
+del('public/images/*');
 mix.js('resources/js/app.js', 'public/js')
    .postCss('resources/css/app.css', 'public/css')
    .tailwind('./tailwind.config.js')

@@ -1,7 +1,8 @@
 <div id="contact" class="Contact  py-40 lg:py-20 bg-bottom bg-no-repeat bg-contain md:py-12" style="background-image: url('/images/home-bg.png')">
     <div class="flex px-16 xl:flex-col md:px-5 ">
         <div class="flex-1">
-            <h1 class="  md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl" style="background-image: url('/images/contact-bg.png')">
+            <h1 class="relative md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl">
+                <x-icons.diamond class="absolute left-0 bottom-0 -z-10" fill="#80FF8E"/>
                 Contact
             </h1>
             <div class=" md:px-4 md:pt-10 pl-8 pt-16">
