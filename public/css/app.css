@@ -14660,6 +14660,10 @@ video {
   visibility: visible;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 1090px) {
   .xl\:sr-only {
     position: absolute;

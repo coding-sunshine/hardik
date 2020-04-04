@@ -4,8 +4,10 @@
     </figure>
     <ul class="flex font-serif lg:text-lg md:text-sm text-2xl">
         @foreach ($navLinks as $nav)
-            <li class="font-bold cursor-pointer{{ ($loop->last) ? '' : ' mr-5 md:mr-3' }}" onclick="smoothScroll(document.getElementById('{{ $nav->abbr }}'))">
-                {{ $nav->name }}
+            <li class="font-bold cursor-pointer{{ ($loop->last) ? '' : ' mr-5 md:mr-3' }}" >
+                <a href="#{{ $nav->abbr }}">
+                    {{ $nav->name }}
+                </a>
             </li>
         @endforeach
     </ul>

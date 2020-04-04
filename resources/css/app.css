@@ -72,3 +72,6 @@
 .side-li:hover .side-li-hover{
     visibility: visible;
 }
+html {
+    scroll-behavior: smooth;
+}
