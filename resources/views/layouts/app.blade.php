@@ -10,7 +10,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <link rel="icon" href="/public/favicon.ico" sizes="32x32">
+        <link rel="icon" href="/images/favicon.ico" sizes="32x32">
         <meta name="Description" content="I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀">
 
         <!-- Styles -->
