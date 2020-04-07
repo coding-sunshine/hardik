@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+        <link rel='manifest' href='/manifest.json'>
 
         <!-- CSRF Token -->
-        <meta name="csrf-token" content="Kfajuz9R8b2n1rJA3cKgoMyi9HC1YrIX8c7NMk5x">
+        <meta name="csrf-token" content="P2PFmzyXfUXnGYJRhxIEjkZb0v8LIRUbD1nqW3VG">
         <title>Hardik Shah</title>
 
         <link rel="icon" href="/images/favicon.ico" sizes="32x32">
@@ -692,6 +693,28 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet" >
+        <script type="text/javascript">
+    // This is the service worker with the Advanced caching
+
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+            console.log("[PWA Builder] active service worker found, no need to register");
+        } else {
+            // Register the service worker
+            navigator.serviceWorker
+                .register("pwabuilder-sw.js", {
+                    scope: "./"
+                })
+                .then(function (reg) {
+                    console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                });
+        }
+    }
+
+</script>
 
     </body>
 </html>

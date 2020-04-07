@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+        <link rel='manifest' href='/manifest.json'>
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -24,6 +25,7 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet" >
+        @include('layouts.partials.pwa')
 {{--        <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>--}}
     </body>
 </html>
