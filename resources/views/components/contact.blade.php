@@ -21,9 +21,9 @@
                         <span class="font-medium">mail.hardikshah@gmail.com</span>, or contact me via my social profiles:
                     </p>
                     <div class="flex pt-12 md:pt-5">
-                        <img class="mr-10 lg:h-4 lg:w-4" src="/images/github.png" />
-                        <img class="mr-10 lg:h-4 lg:w-4" src="/images/twitter.png" />
-                        <img class="lg:h-4 lg:w-4" src="/images/linkedin.png" />
+                        <x-icons.github class="mr-10 lg:h-4 lg:w-4" fill="#FF9780"/>
+                        <x-icons.twitter class="mr-10 lg:h-4 lg:w-4" fill="#FF9780"/>
+                        <x-icons.linkedin class="lg:h-4 lg:w-4" fill="#FF9780"/>
                     </div>
                 </div>
             </div>
