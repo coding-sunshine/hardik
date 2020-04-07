@@ -1,4 +1,4 @@
-<div id="contact" class="Contact  py-40 lg:py-20 bg-bottom bg-no-repeat bg-contain md:py-12" style="background-image: url('/images/home-bg.png')" {{ $attributes }}>
+<div id="contact" class="contact  py-40 lg:py-20 bg-bottom bg-no-repeat bg-contain md:py-12" {{ $attributes }}>
     <div class="flex px-16 xl:flex-col md:px-5 ">
         <div class="flex-1">
             <h1 class="relative md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl">
