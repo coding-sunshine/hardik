@@ -4,7 +4,7 @@
     "name" : "Hardik Shah",
     "scope" : "/",
     "display" : "fullscreen",
-    "start_url" : "https://hardik.hardsshah.now.sh//",
+    "start_url" : "/",
     "short_name" : "Hardik Shah",
     "theme_color" : "transparent",
     "description" : "I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀",
@@ -18,80 +18,36 @@
             "sizes": "32x32"
         },
         {
-            "src": "[Embedded]",
-            "sizes": "44x44"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "48x48"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "1240x600"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "300x300"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "150x150"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "88x88"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "24x24"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "50x50"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "620x300"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "192x192"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "144x144"
-        },
-        {
-            "src": "[Embedded]",
-            "sizes": "96x96"
-        },
-        {
-            "src": "[Embedded]",
+            "src": "images/icons/icon-72x72.png",
             "sizes": "72x72"
         },
         {
-            "src": "[Embedded]",
-            "sizes": "36x36"
+            "src": "images/icons/icon-96x96.png",
+            "sizes": "96x96"
         },
         {
-            "src": "[Embedded]",
-            "sizes": "1024x1024"
+            "src": "images/icons/icon-128x128.png",
+            "sizes": "128x128"
         },
         {
-            "src": "[Embedded]",
-            "sizes": "180x180"
+            "src": "images/icons/icon-144x144.png",
+            "sizes": "144x144"
         },
         {
-            "src": "[Embedded]",
+            "src": "images/icons/icon-152x152.png",
             "sizes": "152x152"
         },
         {
-            "src": "[Embedded]",
-            "sizes": "120x120"
+            "src": "images/icons/icon-192x192.png",
+            "sizes": "192x192"
         },
         {
-            "src": "[Embedded]",
-            "sizes": "76x76"
+            "src": "images/icons/icon-384x384.png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "images/icons/icon-512x512.png",
+            "sizes": "512x512"
         }],
     "url" : "https://hardik-gold.now.sh/",
     "screenshots" : [],
