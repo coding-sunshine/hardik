@@ -1,4 +1,4 @@
-<div id="intro" class="Home bg-bottom bg-no-repeat bg-contain" style="background-image: url('/images/home-bg.png')">
+<div id="intro" class="Home bg-bottom bg-no-repeat bg-contain" style="background-image: url('/images/home-bg.png')" {{ $attributes }}>
     <section class="flex lg:pb-24 lg:pt-12 md:pt-5 pb-48 pt-20 px-16 xl:flex-col md:px-8 md:pb-12">
         <div class="flex-1 lg:pb-16 xl:pb-20 md:pb-8">
             <h1 class="font-bold font-serif lg:text-4xl text-6xl md:text-2xl">

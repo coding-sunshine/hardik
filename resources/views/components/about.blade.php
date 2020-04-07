@@ -1,4 +1,4 @@
-<div id="about" class="About flex md:px-5 px-16 py-20 xl:flex-col md:py-12">
+<div id="about" class="About flex md:px-5 px-16 py-20 xl:flex-col md:py-12" {{ $attributes }}>
     <div class="flex-1 xl:mr-10 md:mr-0">
         <h1 class="relative md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl">
             <x-icons.diamond class="absolute left-0 bottom-0 -z-10" fill="#80C1FF"/>

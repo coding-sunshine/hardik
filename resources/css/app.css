@@ -75,3 +75,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+#work:hover ~ .sidebar .work .side-li-hover, #about:hover ~ .sidebar .about .side-li-hover, #skills:hover ~ .sidebar .skills .side-li-hover, #contact:hover ~ .sidebar .contact .side-li-hover{
+    visibility: visible;
+}

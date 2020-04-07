@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between md:px-8 px-16 py-5">
+<nav class="flex items-center justify-between md:px-8 px-16 py-5" {{ $attributes }}>
     <figure>
         <img src="/images/logo.png" style="background-image: url('/images/logo-bg.svg');" class="bg-auto bg-no-repeat bg-right-bottom lg:w-16 md:w-1/2" />
     </figure>

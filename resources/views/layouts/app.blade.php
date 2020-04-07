@@ -20,7 +20,7 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div id="home">
+        <div id="home" x-data="{ sticky: false }">
             @yield('content')
         </div>
         <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>

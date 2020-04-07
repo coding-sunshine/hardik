@@ -1,4 +1,4 @@
-<div id="work" class="Work px-16 md:px-5 py-20 md:py-12">
+<div id="work" class="Work px-16 md:px-5 py-20 md:py-12" {{ $attributes }}>
     <h1 class="relative md:text-2xl bg-no-repeat font-bold font-serif lg:bg-contain lg:pl-5 lg:text-4xl pl-8 py-3 text-6xl">
         <x-icons.diamond class="absolute left-0 bottom-0 -z-10"/>
         Work
