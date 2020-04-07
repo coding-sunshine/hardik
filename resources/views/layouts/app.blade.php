@@ -10,15 +10,18 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <link rel="icon" href="/public/favicon.ico" sizes="32x32">
+        <meta name="Description" content="I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀">
 
         <!-- Styles -->
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        @inline('/css/app.css')
+{{--        <link href="{{ mix('css/app.css') }}" rel="stylesheet">--}}
     </head>
     <body>
         <div id="home" x-data="{ sticky: false }">
             @yield('content')
         </div>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 {{--        <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>--}}
     </body>
 </html>
