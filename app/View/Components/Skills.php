@@ -3,9 +3,17 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Skill as skillModel;
 
 class Skills extends Component
 {
+    /**
+     * The categories.
+     *
+     * @var array
+     */
+    public $categories;
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +21,7 @@ class Skills extends Component
      */
     public function __construct()
     {
-        //
+        $this->categories = skillModel::all()->groupBy('category');
     }
 
     /**

@@ -4,103 +4,25 @@
             <x-icons.diamond class="absolute left-0 bottom-0 -z-10" fill="#FF9780"/>
             Skills
         </h1>
-
         <div class="md:px-4">
-            <div class="lg:pt-10 pt-16">
-                <h2 class="font-bold font-serif lg:text-lg text-2xl">Front-End</h2>
-                <div class="pt-5 flex flex-wrap lg:text-sm">
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">HTML5/CSS3</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">VueJs</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">Boostrap</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">TailwindCSS</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">Serverless</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
+            @foreach ($categories as $category => $skills)
+                <div class="lg:pt-10 pt-16">
+                    <h2 class="font-bold font-serif lg:text-lg text-2xl">{{ $category }}</h2>
+                    <div class="pt-5 flex flex-wrap lg:text-sm">
+                        @foreach ($skills as $skill)
+                            <div class="flex items-center mr-6">
+                                <span class="mr-2">{{ $skill->skill }}</span>
+                                @if($skill->strenght)
+                                    <x-icons.star class="h-4 lg:h-3 lg:w-3 w-4" />
+                                @endif
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-            </div>
-            <div class="lg:pt-10 pt-16">
-                <h2 class="text-2xl font-serif font-bold lg:text-lg">Back-End</h2>
-                <div class="pt-5 flex flex-wrap lg:text-sm">
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">PHP</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">Laravel</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">Serverless</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div>
-                        <span>NodeJs</span>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:pt-10 pt-16">
-                <h2 class="text-2xl font-serif font-bold lg:text-lg">Database</h2>
-                <div class="pt-5 flex flex-wrap lg:text-sm">
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">MySQL</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">MongoDB</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="mr-6">
-                        <span>CouchDB</span>
-                    </div>
-                    <div class="mr-6">
-                        <span>Elastic Search</span>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:pt-10 pt-16">
-                <h2 class="text-2xl font-serif font-bold lg:text-lg">
-                    ServerManagement
-                </h2>
-                <div class="pt-5 flex flex-wrap lg:text-sm">
-                    <div class="flex items-center mr-6">
-                        <span class="mr-2">AWS Management</span>
-                        <img class="h-4 lg:h-3 lg:w-3 w-4" src="/images/star.png" />
-                    </div>
-                    <div class="mr-6">
-                        <span>Azure Management</span>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:pt-10 pt-16">
-                <h2 class="text-2xl font-serif font-bold lg:text-lg">Design</h2>
-                <div class="pt-5 flex flex-wrap lg:text-sm">
-                    <div class="mr-6">
-                        <span>Wireframing</span>
-                    </div>
-                    <div class="mr-6">
-                        <span>Photoshop</span>
-                    </div>
-                    <div class="mr-6">
-                        <span>Illustrator</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
             <p class="lg:pt-10 pt-16 text-gray-500">
                 The ones with
-                <img class="w-3 inline" src="/images/star.png" /> I am strong with
+                <x-icons.star class="w-3 inline" /> I am strong with
             </p>
         </div>
     </div>
