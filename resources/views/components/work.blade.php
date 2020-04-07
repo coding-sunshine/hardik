@@ -15,7 +15,7 @@
                             <p class="text-sm">{{ $item->position }} • {{ $item->year }}</p>
                             <div class="child invisible flex items-center justify-between lg:pt-10 pt-16 work-card-hover-text">
                                 <span class="font-bold font-thin">Read more</span>
-                                <img class="md:w-5" src="/images/right-arrow.png" />
+                                <x-icons.rightarrow class="md:w-5" />
                             </div>
                         </div>
                     </div>
