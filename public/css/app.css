@@ -14645,7 +14645,7 @@ video {
  */
 
 .work-card:hover .work-card-hover{
-  background-image: url("/images/rectangle.png");
+  background-color: #FFDE80;
 }
 
 .work-card:hover .work-card-hover .work-card-hover-text{
@@ -14653,7 +14653,7 @@ video {
 }
 
 .arrow:hover{
-  background-image: url("/images/blue-arrow.png");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOC44MzM0IDU0LjE4ODlMMTguMTA5NCA1My40NjQ5QzEyLjQ2MjIgNDcuNjg5OSA2LjQ0NDYyIDM5Ljk4NTYgNi40OTE3MSAzNS42NjI2QzYuNTM4ODEgMzEuMzM5NyAxMi43NDkgMjMuNzgzNyAxOC41Mzc0IDE4LjExNDZDMjQuMzI1OCAxMi40NDU0IDMyLjAwOTUgNi40NjUyNyAzNi4zMjgyIDYuNTE2MTNDNDAuNjQ2OCA2LjU2NyA0OC4yMjM0IDEyLjc2MzUgNTMuODg3NiAxOC41Mzg1QzU5LjU1MTggMjQuMzEzNCA2NS41MzExIDMyLjAwNSA2NS40ODQgMzYuMzI3OUM2NS40MzY5IDQwLjY1MDkgNTkuMjQ4MSA0OC4yMTk2IDUzLjQ1OTcgNTMuODg4OEM0Ny42NzEzIDU5LjU1NzkgMzkuOTkxOCA2NS41MzM4IDM1LjY2ODkgNjUuNDg3MkMzMS41MzMzIDY1LjQ0MDYgMjQuMzk1NSA1OS43NTA5IDE4LjgzMzQgNTQuMTg4OVoiIGZpbGw9IiM4MEVBRkYiLz4KPC9zdmc+");
 }
 
 .side-li:hover .side-li-hover{

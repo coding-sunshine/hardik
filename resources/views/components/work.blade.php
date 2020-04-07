@@ -8,7 +8,7 @@
             <div class="flex pb-5 xl:flex-col xl:pb-0">
                 @foreach($chunk as $item)
                     <div class="md:mr-0 border border-black cursor-pointer group h-84 lg:h-40 lg:w-3/6 mr-5 relative rounded w-72 xl:mb-5 md:w-auto work-card">
-                        <div class="absolute bg-cover bg-no-repeat md:bg-cover h-84 left-1/2 lg:bg-contain lg:h-40 lg:w-full p-6 top-1/2 w-72 -z-10 work-card-hover" data-hoverimage="/images/rectangle.png">
+                        <div class="absolute bg-cover bg-no-repeat md:bg-cover h-84 left-1/2 lg:bg-contain lg:h-40 lg:w-full p-6 top-1/2 w-72 -z-10 work-card-hover rounded">
                             <h2 class="font-bold font-serif lg:text-lg text-2xl">
                                 {{ $item->company }}
                             </h2>
