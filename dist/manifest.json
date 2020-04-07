@@ -6,10 +6,10 @@
     "display" : "fullscreen",
     "start_url" : "/",
     "short_name" : "Hardik Shah",
-    "theme_color" : "transparent",
+    "theme_color": "#80eaff",
+    "background_color": "#ffffff",
     "description" : "I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀",
     "orientation" : "any",
-    "background_color" : "transparent",
     "related_applications" : [],
     "prefer_related_applications" : false,
     "icons" : [
