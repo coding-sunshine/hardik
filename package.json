@@ -11,8 +11,10 @@
     },
     "devDependencies": {
         "@tailwindcss/custom-forms": "^0.2",
+        "autoprefixer": "^9.7.6",
         "axios": "^0.19",
         "cross-env": "^7.0",
+        "del": "^5.1.0",
         "laravel-mix": "^5.0.1",
         "laravel-mix-purgecss": "^4.1",
         "laravel-mix-tailwind": "^0.1.0",
@@ -23,7 +25,5 @@
         "tailwindcss": "^1.0",
         "vue-template-compiler": "^2.6.11"
     },
-    "dependencies": {
-        "del": "^5.1.0"
-    }
+    "dependencies": {}
 }
