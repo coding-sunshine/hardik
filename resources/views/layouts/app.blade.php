@@ -11,8 +11,6 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <!-- Scripts -->
-{{--        <script src="{{ asset('js/app.js') }}" defer></script>--}}
 
         <!-- Styles -->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -21,6 +19,6 @@
         <div id="home" x-data="{ sticky: false }">
             @yield('content')
         </div>
-        <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
+{{--        <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>--}}
     </body>
 </html>
