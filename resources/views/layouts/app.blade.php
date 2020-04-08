@@ -38,8 +38,8 @@
 
 
 
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital,wght@1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital,wght@1,700&display=swap"></noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Serif:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Serif:wght@400;700&display=swap"></noscript>
 
         <!-- Styles -->
         @inline('/css/app.css')
