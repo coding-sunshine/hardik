@@ -18,6 +18,26 @@
         <link rel="icon" href="/images/favicon.ico" sizes="32x32">
         <meta name="Description" content="I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀">
 
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="Hardik Shah">
+        <meta itemprop="description" content="I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀">
+        <meta itemprop="image" content="/images/screenshot.png">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://hardik.hardsshah.now.sh">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Hardik Shah">
+        <meta property="og:description" content="I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀">
+        <meta property="og:image" content="/images/screenshot.png">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Hardik Shah">
+        <meta name="twitter:description" content="I am a full-stack developer based in Melbourne, Victoria specializing in building (and occasionally designing) high-quality websites and applications. 🚀">
+        <meta name="twitter:image" content="/images/screenshot.png">
+
+
+
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital,wght@1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital,wght@1,700&display=swap"></noscript>
 
