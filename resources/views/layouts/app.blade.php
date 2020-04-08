@@ -12,6 +12,7 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="theme-color" content="#80eaff"/>
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <link rel="icon" href="/images/favicon.ico" sizes="32x32">
